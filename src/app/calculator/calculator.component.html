@@ -1,0 +1,26 @@
+<div class="calculator">
+    <div class="display">{{ displayValue }}</div>
+    <div class="buttons">
+      <button (click)="appendToDisplay('7')" class="digit">7</button>
+      <button (click)="appendToDisplay('8')" class="digit">8</button>
+      <button (click)="appendToDisplay('9')" class="digit">9</button>
+      <button (click)="clear()">C</button>
+      <button (click)="appendToDisplay('4')" class="digit">4</button>
+      <button (click)="appendToDisplay('5')" class="digit">5</button>
+      <button (click)="appendToDisplay('6')" class="digit">6</button>
+      <button (click)="add()" class="operator">+</button>
+      <button (click)="appendToDisplay('1')" class="digit">1</button>
+      <button (click)="appendToDisplay('2')" class="digit">2</button>
+      <button (click)="appendToDisplay('3')" class="digit">3</button>
+      <button (click)="subtract()" class="operator">-</button>
+      <button (click)="appendToDisplay('0')" class="digit">0</button>
+      <button (click)="appendToDisplay('.')">.</button>
+      <button (click)="divide()" class="operator">/</button>
+      <button (click)="multiply()" class="operator">*</button>
+      <button (click)="backspace()">&lt;</button>
+      <button (click)="calculate()">=</button>
+      <button (click)="usePreviousResult()" class="ans">Res</button>
+      <button style="font-size: 18px;" (click)="calculate()">Enter</button>
+    </div>
+  </div>
+  
